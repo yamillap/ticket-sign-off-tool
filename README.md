@@ -21,6 +21,12 @@ A full-stack ticket automation tool that generates formatted QA/testing sign-off
 - Generate structured sign-off outputs
 - Copy generated tickets instantly
 
-## Currently working on integrating
+## Currently Working on Integrating
 
 - PostgreSQL and AWS deployment
+
+## Installation
+
+```bash
+npm install
+npm run dev
