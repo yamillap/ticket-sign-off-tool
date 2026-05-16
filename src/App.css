@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    color: white;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(125, 108, 179) 3%, rgb(113, 153, 194) 38%, rgb(105, 68, 84, 100) 68%, rgb(81, 56, 111) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+    
+}
+
+:root {
+  
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+
+.header-section{
+    margin-top: 50px;
+
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.ticketLayout {
+    display: flex;
+    justify-content: center;
+}
+
+.form-section {
+    width: 450px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+}
+
+.textbox {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    padding: 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.form-section:hover{
+    background: rgba(255,255,255,0.12);
+}
+
+.box{
+
+    border: none;
+    border-bottom: 0.5px solid white; 
+    outline: none;                 
+    background: transparent;
+    font-size: 1em;
+                    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ticketLayout{
+    display: flex;
+    justify-content: center;
+}
+
+.ticketSubmission{
+    width: 450px;
+    min-height: auto;
+    padding: 2rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    resize: vertical;
+    
+}
+
+.ticketSubmission h3 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.ticketSubmission:hover{
+    background: rgba(255,255,255,0.12);
+}
+
+
+button{
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    width: 100px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+
+button:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    
+
+
+}
+
+
+pre{
+    width: 100%;
+    text-align: left;
+    white-space: pre-wrap;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    margin-top: -5px;
+  
+
+
+}
+
+.copy-btn:hover {
+    background: transparent;
+}
+
+.copy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    
+}
+
+.copy-btn img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    
+}
+
+.ticketOutput{
+    margin-top: -50px;
+}
+
+
+
+
+
+
+
+
